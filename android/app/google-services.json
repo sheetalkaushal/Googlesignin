@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "754684947402",
+    "project_id": "sign-76e41",
+    "storage_bucket": "sign-76e41.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754684947402:android:98d99ed52925cc89b57d33",
+        "android_client_info": {
+          "package_name": "com.googlesign"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754684947402-klsssq207c2e67gg5ejeg3rvm7ub4coj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj9mEItyQVpSjtnVR-mxgHKqrfXZVW6hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754684947402-klsssq207c2e67gg5ejeg3rvm7ub4coj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
