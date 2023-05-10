@@ -2,6 +2,7 @@ import {View, Text, TouchableOpacity} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import Logincustom from '../../Components/Logincustom';
 import {style} from './LoginStyle';
+import {Image} from 'react-native';
 import {GoogleSignin} from '@react-native-google-signin/google-signin';
 import auth from '@react-native-firebase/auth';
 
@@ -46,10 +47,6 @@ const Login = ({navigation}) => {
       console.log(error);
     }
   };
-  // const textInputfunction=()=>{
-  //   SetEmail()
-  //   SetPassword()
-  // }
   const Emailsign = () => {
     auth()
       .createUserWithEmailAndPassword(emails, passwords)
@@ -85,10 +82,16 @@ const Login = ({navigation}) => {
       SetHide('hide');
     }
   }
-  // console.log('>>>>>',emails,passwords)
   return (
     <View style={style.container}>
       <Text style={style.login}>Login Google</Text>
+      <TouchableOpacity style={style.loginnext}>
+        <Text
+          onPress={() => navigation.navigate('OTPverification')}
+          style={style.next}>
+          NEXT
+        </Text>
+      </TouchableOpacity>
       <View style={style.userbtn}>
         <Logincustom
           placeholder="Email"
@@ -109,11 +112,23 @@ const Login = ({navigation}) => {
         />
       </View>
       <TouchableOpacity style={style.nextlogin}>
+        <Image
+          style={{height: 20, width: 30}}
+          source={{
+            uri: 'https://1000logos.net/wp-content/uploads/2021/05/Gmail-logo.png',
+          }}
+        />
         <Text style={style.loginbtn} onPress={() => Emailsign()}>
-          signin
+          SignIn login
         </Text>
       </TouchableOpacity>
       <TouchableOpacity style={style.nextlogin}>
+        <Image
+          style={{height: 20, width: 20}}
+          source={{
+            uri: 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/706px-Google_%22G%22_Logo.svg.png',
+          }}
+        />
         <Text style={style.loginbtn} onPress={Googlelogin}>
           GoogleLogin
         </Text>

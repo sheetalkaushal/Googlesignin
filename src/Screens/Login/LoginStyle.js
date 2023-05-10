@@ -3,7 +3,7 @@ import {moderateScale} from 'react-native-size-matters';
 export const style = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    backgroundColor: '#FDF5FE',
   },
   login: {
     textAlign: 'center',
@@ -17,18 +17,22 @@ export const style = StyleSheet.create({
   nextlogin: {
     alignItems: 'center',
     marginTop: moderateScale(23),
-    backgroundColor: 'brown',
+    borderWidth: 1,
+    borderColor: 'purple',
     height: 50,
-    width: 150,
+    width: 200,
     alignSelf: 'center',
     justifyContent: 'center',
     borderRadius: 20,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
   },
   loginbtn: {
-    color: 'white',
+    color: '#05445E',
     fontSize: 18,
+    fontWeight: '600',
   },
-  Signout:{
+  Signout: {
     alignItems: 'center',
     marginTop: moderateScale(23),
     backgroundColor: 'green',
@@ -41,5 +45,13 @@ export const style = StyleSheet.create({
   signout: {
     color: 'white',
     fontSize: 18,
+  },
+  loginnext: {
+    alignItems: 'flex-end',
+    marginRight: 17,
+  },
+  next: {
+    color: 'green',
+    fontWeight: '700',
   },
 });

@@ -4,6 +4,8 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import Login from '../Screens/Login/Login';
 import Signup from '../Screens/Signup/Signup';
 import {NavigationContainer} from '@react-navigation/native';
+import OTPverification from '../Screens/OTPverification/OTPverification';
+import Verify from '../Screens/Verify/Verify';
 const Stack = createNativeStackNavigator();
 const Routes = () => {
   return (
@@ -11,6 +13,8 @@ const Routes = () => {
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Signup" component={Signup} />
+        <Stack.Screen name="OTPverification" component={OTPverification}/>
+        <Stack.Screen name="Verify" component={Verify}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

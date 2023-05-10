@@ -16,13 +16,16 @@ const Logincustom = ({
   onPress,
   maxlength,
   onChangeText,
-  value
+  value,
+  email,
+...props
 }) => {
   return (
     <View style={Style.container}>
       <TextInput
-      onChangeText={onChangeText}
-      value={value}
+        onChangeText={onChangeText}
+        value={value}
+        email={email}
         style={Style.main}
         placeholder={placeholder}
         placeholderTextColor={'grey'}
@@ -41,9 +44,9 @@ export default Logincustom;
 const Style = StyleSheet.create({
   container: {
     marginTop: moderateScale(34),
-    backgroundColor: '#33FFF2',
+    borderColor: 'purple',
+    borderWidth: 1,
     borderRadius: moderateScale(8),
-    height: 50,
     width: 300,
     flexDirection: 'row',
     alignItems: 'center',
