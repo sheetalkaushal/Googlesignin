@@ -6,6 +6,10 @@ import Signup from '../Screens/Signup/Signup';
 import {NavigationContainer} from '@react-navigation/native';
 import OTPverification from '../Screens/OTPverification/OTPverification';
 import Verify from '../Screens/Verify/Verify';
+import TextField from '../Screens/TextField/TextField';
+import Carouseldesign from '../Screens/Carousel/Carouseldesign';
+
+
 const Stack = createNativeStackNavigator();
 const Routes = () => {
   return (
@@ -13,8 +17,10 @@ const Routes = () => {
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="Signup" component={Signup} />
-        <Stack.Screen name="OTPverification" component={OTPverification}/>
-        <Stack.Screen name="Verify" component={Verify}/>
+        <Stack.Screen name="OTPverification" component={OTPverification} />
+        <Stack.Screen name="Verify" component={Verify} />
+        <Stack.Screen name="TextField" component={TextField}/>
+        <Stack.Screen name="Carouseldesign" component={Carouseldesign}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

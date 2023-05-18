@@ -83,7 +83,7 @@ const Verify = ({navigation, route}) => {
           </TouchableOpacity>
         </Text>
       </View>
-      <TouchableOpacity onPress={() => signIn()} style={style.send}>
+      <TouchableOpacity onPress={() => navigation.navigate("TextField")} style={style.send}>
         <Text style={style.sendotp}>Verify</Text>
       </TouchableOpacity>
     </View>

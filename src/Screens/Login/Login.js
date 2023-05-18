@@ -5,7 +5,6 @@ import {style} from './LoginStyle';
 import {Image} from 'react-native';
 import {GoogleSignin} from '@react-native-google-signin/google-signin';
 import auth from '@react-native-firebase/auth';
-
 const Login = ({navigation}) => {
   const [Email, SetEmail] = useState('');
   const [emails, Setemails] = useState('');
@@ -15,6 +14,7 @@ const Login = ({navigation}) => {
   const [Hide, SetHide] = useState('Show');
   useEffect(() => {
     GoogleSignin.configure();
+    // webClientid: "754684947402-klsssq207c2e67gg5ejeg3rvm7ub4coj.apps.googleusercontent.com",
   }, []);
   const Googlelogin = async () => {
     try {
