@@ -12,11 +12,11 @@ const data = [
   },
   {
     id: 2,
-    url:  imagePath.icbanner2,
+    url: imagePath.icbanner2,
   },
   {
     id: 3,
-    url:  imagePath.icbanner3,
+    url: imagePath.icbanner3,
   },
 ];
 
@@ -24,13 +24,15 @@ const renderItem = ({item}) => {
   return (
     <View
       style={{
-        // borderWidth: 1,
         padding: 20,
         borderRadius: 20,
         alignItems: 'center',
         backgroundColor: 'white',
       }}>
-      <Image source={item.url} style={{width: 300, height: 600,borderRadius:40}} />
+      <Image
+        source={item.url}
+        style={{width: 300, height: 600, borderRadius: 40}}
+      />
     </View>
   );
 };

@@ -8,8 +8,7 @@ import OTPverification from '../Screens/OTPverification/OTPverification';
 import Verify from '../Screens/Verify/Verify';
 import TextField from '../Screens/TextField/TextField';
 import Carouseldesign from '../Screens/Carousel/Carouseldesign';
-
-
+import DynamicScroll from '../Screens/DynamicScroll/DynamicScroll';
 const Stack = createNativeStackNavigator();
 const Routes = () => {
   return (
@@ -21,6 +20,8 @@ const Routes = () => {
         <Stack.Screen name="Verify" component={Verify} />
         <Stack.Screen name="TextField" component={TextField}/>
         <Stack.Screen name="Carouseldesign" component={Carouseldesign}/>
+        <Stack.Screen name="DynamicScroll" component={DynamicScroll}/>
+        {/* <Stack.Screen name="Data" component={Data}/> */}
       </Stack.Navigator>
     </NavigationContainer>
   );
