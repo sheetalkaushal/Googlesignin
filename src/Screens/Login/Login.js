@@ -87,7 +87,12 @@ const Login = ({navigation}) => {
       <Text style={style.login}>Login Google</Text>
       <TouchableOpacity style={style.loginnext}>
         <Text
-          onPress={() => navigation.navigate('OTPverification')}
+          onPress={() =>
+            navigation.navigate(
+              'OTPverification',
+              (gesturesDirection = 'inverted'),
+            )
+          }
           style={style.next}>
           NEXT
         </Text>
@@ -96,6 +101,7 @@ const Login = ({navigation}) => {
         <Logincustom
           placeholder="Email"
           value={emails}
+          myfocus={() => navigation.navigate('OTPverification')}
           email={Email}
           onChangeText={val => Setemails(val)}
         />

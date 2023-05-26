@@ -4,7 +4,9 @@ import {moderateScale} from 'react-native-size-matters';
 export const style = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#FDF5FE',
+    // backgroundColor: '#FDF5FE',
+    backgroundColor:"red"
+
   },
   arrow: {
     marginTop: 27,

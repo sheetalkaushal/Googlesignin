@@ -18,6 +18,7 @@ const Logincustom = ({
   onChangeText,
   value,
   email,
+  myfocus,
 ...props
 }) => {
   return (
@@ -26,6 +27,7 @@ const Logincustom = ({
         onChangeText={onChangeText}
         value={value}
         email={email}
+        onFocus={myfocus}
         style={Style.main}
         placeholder={placeholder}
         placeholderTextColor={'grey'}
