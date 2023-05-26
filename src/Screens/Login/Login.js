@@ -11,8 +11,8 @@ const Login = ({navigation}) => {
   const [passwords, Setpasswords] = useState('');
   const [Password, SetPassword] = useState('');
   const [enterpass, SetEnterPass] = useState(true);
-  const [Hide, SetHide] = useState('Show');
-  useEffect(() => {
+  const [Hide, SetHide] = useState('Show'); 
+   useEffect(() => {
     GoogleSignin.configure();
     // webClientid: "754684947402-klsssq207c2e67gg5ejeg3rvm7ub4coj.apps.googleusercontent.com",
   }, []);

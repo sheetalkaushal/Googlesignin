@@ -16,7 +16,7 @@ import {
 } from '@react-navigation/stack';
 import Cube from '../Screens/Cube/Cube';
 const Stack = createStackNavigator();
-const forFade = ({ current }) => ({
+const forFade = ({current}) => ({
   cardStyle: {
     opacity: current.progress,
   },
@@ -46,7 +46,7 @@ const Routes = () => {
         screenOptions={{
           headerShown: false,
           gestureEnabled: true,
-          gestureDirection:'horizontal-inverted',
+          gestureDirection: 'horizontal-inverted',
           // transitionSpec: {
           //   open: config,
           //   close: closeconfig,
@@ -54,7 +54,11 @@ const Routes = () => {
           ...TransitionPresets.SlideFromRightIOS,
           // cardStyleInterpolators:CardStyleInterpolators.forVerticalIOS
         }}>
-        <Stack.Screen name="Login" component={Login} options={{ cardStyleInterpolator: forFade }} />
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{cardStyleInterpolator: forFade}}
+        />
         <Stack.Screen name="Signup" component={Signup} />
         <Stack.Screen name="OTPverification" component={OTPverification} />
         <Stack.Screen name="Verify" component={Verify} />

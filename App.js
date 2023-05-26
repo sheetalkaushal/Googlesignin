@@ -11,7 +11,8 @@ const App = () => {
       {/* <Routes /> */}
       {/* <Carouseldesign/> */}
       {/* <DynamicScroll /> */}
-      <Cube/>
+    
+      <Cube />
     </View>
   );
 };
